@@ -1,42 +1,37 @@
 package helpers;
 
 import com.codeborne.selenide.Configuration;
+import com.codeborne.selenide.Selenide;
 import config.Project;
-import org.openqa.selenium.chrome.ChromeOptions;
+import io.qameta.allure.selenide.AllureSelenide;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
-import java.util.HashMap;
-import java.util.Map;
+import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
+import static com.codeborne.selenide.logevents.SelenideLogger.addListener;
+import static org.openqa.selenium.logging.LogType.BROWSER;
 
 public class DriverSettings {
     public static void configure() {
-        Configuration.browser = Project.config.browser();
-        Configuration.browserVersion = Project.config.browserVersion();
-        Configuration.browserSize = Project.config.browserSize();
 
-        DesiredCapabilities capabilities = new DesiredCapabilities();
-        ChromeOptions chromeOptions = new ChromeOptions();
 
-        chromeOptions.addArguments("--no-sandbox");
-        chromeOptions.addArguments("--disable-infobars");
-        chromeOptions.addArguments("--disable-popup-blocking");
-        chromeOptions.addArguments("--disable-notifications");
-        chromeOptions.addArguments("--lang=en-en");
-        if (Project.isWebMobile()) { // for chrome only
-            chromeOptions = new ChromeOptions();
-            Map<String, Object> mobileDevice = new HashMap<>();
-            mobileDevice.put("deviceName", Project.config.browserMobileView());
-            chromeOptions.setExperimentalOption("mobileEmulation", mobileDevice);
-            capabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
-        }
+        addListener("AllureSelenide", new AllureSelenide().screenshots(true).savePageSource(true));
+
+        Configuration.startMaximized = true;
 
         if (Project.isRemoteWebDriver()) {
+            DesiredCapabilities capabilities = new DesiredCapabilities();
             capabilities.setCapability("enableVNC", true);
             capabilities.setCapability("enableVideo", true);
-            Configuration.remote = Project.config.remoteDriverUrl();
+            Configuration.browserCapabilities = capabilities;
+
+        }
+    }
+        public static String getSessionId(){
+            return ((RemoteWebDriver) getWebDriver()).getSessionId().toString().replace("selenoid","");
         }
 
-        capabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
-        Configuration.browserCapabilities = capabilities;
-    }
+        public static String getConsoleLogs() {
+            return String.join("\n", Selenide.getWebDriverLogs(BROWSER));
+        }
 }
