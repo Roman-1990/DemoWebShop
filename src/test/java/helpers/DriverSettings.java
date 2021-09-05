@@ -24,7 +24,7 @@ public class DriverSettings {
             capabilities.setCapability("enableVNC", true);
             capabilities.setCapability("enableVideo", true);
             Configuration.browserCapabilities = capabilities;
-
+            Configuration.remote = Project.config.remoteDriverUrl();
         }
     }
         public static String getSessionId(){

@@ -23,7 +23,7 @@ import static org.hamcrest.Matchers.is;
 @Layer("Api")
 @Owner("roman")
 @Feature("Issues")
-public class ShopCartTest {
+public class ShopCartTest extends TestBase{
 
     @Test
     @JiraIssues({@JiraIssue("RK-01")})
