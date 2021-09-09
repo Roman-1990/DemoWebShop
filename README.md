@@ -36,7 +36,7 @@ allure serve build/allure-results
    
    <img src = "https://github.com/DemoWebShop/blob/master/src/test/resources/img/video.mp4">
    
-   <img src = "https://github.com/DemoWebShop/blob/master/src/test/resources/img/allure.PNG">
+   <img src = "https://github.com/DemoWebShop/blob/master/src/test/resources/img/Allure.PNG">
 
 
 ## Визуализация итогов пройденных тестов в Allure TestOps
