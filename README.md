@@ -33,7 +33,7 @@ allure serve build/allure-results
 3) Просмотр лога в консоли; :eyes:
 4) Просмотр видео прохождения теста; :eyes: :film_strip:
    </a>
-   <img src = "https://github.com/Roman-1990/DemoWebShop/blob/master/src/test/resources/img/video.mp4">
+   <img src = "https://github.com/Roman-1990/DemoWebShop/blob/master/src/test/resources/img/video.gif">
    <img src = "https://github.com/Roman-1990/DemoWebShop/blob/master/src/test/resources/img/Allure.PNG">
 
 
