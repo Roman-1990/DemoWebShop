@@ -33,14 +33,14 @@ allure serve build/allure-results
 3) Просмотр лога в консоли; :eyes:
 4) Просмотр видео прохождения теста; :eyes: :film_strip:
    </a>
-
-   <img src = "https://github.com/DemoWebShop/blob/master/src/test/resources/img/Allure.PNG">
+   <img src = "https://github.com/Roman-1990/DemoWebShop/blob/master/src/test/resources/img/video.mp4">
+   <img src = "https://github.com/Roman-1990/DemoWebShop/blob/master/src/test/resources/img/Allure.PNG">
 
 
 ## Визуализация итогов пройденных тестов в Allure TestOps
 
-<img src = "https://github.com/DemoWebShop/blob/master/src/test/resources/img/dashboards.PNG">
+<img src = "https://github.com/Roman-1990/DemoWebShop/blob/master/src/test/resources/img/dashboards.PNG">
 
 - Шаги проведения тестов:
   
-  <img src = "https://github.com/DemoWebShop/blob/master/src/test/resources/img/Attachments.PNG">
+  <img src = "https://github.com/Roman-1990/DemoWebShop/blob/master/src/test/resources/img/Attachments.PNG">
