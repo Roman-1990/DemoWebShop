@@ -33,7 +33,7 @@ allure serve build/allure-results
 3) Просмотр лога в консоли; :eyes:
 4) Просмотр видео прохождения теста; :eyes: :film_strip:
    </a>
-   <img src = "https://github.com/DemoWebShop/blob/master/src/test/resources/img/video.mp4">
+
    <img src = "https://github.com/DemoWebShop/blob/master/src/test/resources/img/Allure.PNG">
 
 
@@ -42,4 +42,5 @@ allure serve build/allure-results
 <img src = "https://github.com/DemoWebShop/blob/master/src/test/resources/img/dashboards.PNG">
 
 - Шаги проведения тестов:
+  
   <img src = "https://github.com/DemoWebShop/blob/master/src/test/resources/img/Attachments.PNG">
