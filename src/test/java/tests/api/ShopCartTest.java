@@ -23,7 +23,7 @@ import static org.hamcrest.Matchers.is;
 @Layer("Api")
 @Owner("roman")
 @Feature("Issues")
-public class ShopCartTest extends TestBase{
+public class ShopCartTest extends TestBase {
 
     @Test
     @JiraIssues({@JiraIssue("RK-01")})
@@ -49,23 +49,23 @@ public class ShopCartTest extends TestBase{
                             .cookie("Nop.customer");
 
             step("Открыть небольшой контент для активной сессии, куда можно подставить куки", () -> {
-            //Открыть небольшой контент для активной сессии, куда можно подставить куки
-                    open("http://demowebshop.tricentis.com/Themes/DefaultClean/Content/images/mobile-menu-collapse.png");
+                //Открыть небольшой контент для активной сессии, куда можно подставить куки
+                open("http://demowebshop.tricentis.com/Themes/DefaultClean/Content/images/mobile-menu-collapse.png");
             });
-                    step("Установить куки в браузер", () -> {
-            //Установить куки в браузер
-                    getWebDriver().manage().addCookie(
-                            new Cookie("Nop.customer", authorizationCookie));
-            refresh();
-                    });
-                    step("Открыть главную страницу", () -> {
-        //Открыть главную страницу
-            open("http://demowebshop.tricentis.com/");
-                    });
-                        step("Проверить актуальное количество товара в корзине", () -> {
-            //Проверить актуальное количество товара в корзине
-            $(".cart-qty").shouldHave(text("1"));
-                        });
+            step("Установить куки в браузер", () -> {
+                //Установить куки в браузер
+                getWebDriver().manage().addCookie(
+                        new Cookie("Nop.customer", authorizationCookie));
+                refresh();
+            });
+            step("Открыть главную страницу", () -> {
+                //Открыть главную страницу
+                open("http://demowebshop.tricentis.com/");
+            });
+            step("Проверить актуальное количество товара в корзине", () -> {
+                //Проверить актуальное количество товара в корзине
+                $(".cart-qty").shouldHave(text("1"));
+            });
         });
     }
 }
