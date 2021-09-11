@@ -1,5 +1,19 @@
 # Если ты майнер, тебе сюда!!
 
+___
+
+### Для разработки автотестов использовались технологии и инструменты:
+
+| Java | Gradle | Junit5 | IntelliJ IDEA |
+
+| <img src="https://github.com/Roman-1990/bip-test/blob/master/src/test/resources/img/logo/Java.png" width="40" height="40"> | <img src="https://github.com/Roman-1990/bip-test/blob/master/src/test/resources/img/logo/Gradle.png" width="40" height="40"> | <img src="https://github.com/Roman-1990/bip-test/blob/master/src/test/resources/img/logo/JUnit5.png" width="40" height="40"> | <img src="https://github.com/Roman-1990/bip-test/blob/master/src/test/resources/img/logo/Intelij_IDEA.png" width="40" height="40"> |
+
+| GitHub | Jenkins | Selenoid | Allure Report | Allure TestOps | Telegram |
+
+| <img src="https://github.com/Roman-1990/bip-test/blob/master/src/test/resources/img/logo/Github.png" width="40" height="40"> | <img src="https://github.com/Roman-1990/bip-test/blob/master/src/test/resources/img/logo/Jenkins.png" width="40" height="40"> | <img src="https://github.com/Roman-1990/bip-test/blob/master/src/test/resources/img/logo/Selenoid.png" width="40" height="40"> | <img src="https://github.com/Roman-1990/bip-test/blob/master/src/test/resources/img/logo/Allure_Report.png" width="40" height="40"> | <img src="https://github.com/Roman-1990/bip-test/blob/master/src/test/resources/img/logo/AllureTestOps.png" width="40" height="40"> | <img src="https://github.com/Roman-1990/bip-test/blob/master/src/test/resources/img/logo/Telegram.png" width="40" height="40"> |
+
+___
+
 ### Добро пожаловать в новый магазин [Tricentis!](http://demowebshop.tricentis.com/)
 ### Не стесняйтесь ходить по магазинам и изучать все подряд.
 
