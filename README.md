@@ -36,7 +36,7 @@ gradle clean test
 
 <img src = "https://github.com/Roman-1990/DemoWebShop/blob/master/img/console.PNG">
 
-## :robot:Отправка уведомления о прохождении теста в <img src = "https://starchenkov.pro/qa-guru/img/skills/Telegram.svg" width = "30">
+## :robot:Отправка уведомления о прохождении тестов в <img src = "https://starchenkov.pro/qa-guru/img/skills/Telegram.svg" width = "30">
 
 <img src = "https://github.com/Roman-1990/DemoWebShop/blob/master/img/telegrambot.PNG">
 
