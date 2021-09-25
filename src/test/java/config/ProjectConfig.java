@@ -9,10 +9,9 @@ import org.aeonbits.owner.Config;
 })
 public interface ProjectConfig extends Config {
 
+    @Config.Key("remoteDriverUrl")
+    String remoteDriverUrl();
 
-        @Config.Key("remoteDriverUrl")
-        String remoteDriverUrl();
-
-        @Config.Key("videoStorage")
-        String videoStorage();
+    @Config.Key("videoStorage")
+    String videoStorage();
 }
